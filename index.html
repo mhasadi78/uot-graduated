@@ -1,0 +1,45 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Form    
+        </title>
+    </head>
+    <body>
+        <div id="header">
+                <span id="headerLogo"><img src="UOTlogo.png" id="logo"></span>
+                <span id="headerText"> Information of Students of University of Tabriz </span>
+        </div>
+        <br>
+        <div id="formDiv">
+            <form>
+                <fieldset>
+                        <legend>Personal Information</legend>
+                        <p class="fieldPar"> First Name : <input type="text" class="fieldInput" id="nameField"></p>
+                        <p class="fieldPar"> Family Name : <input type="text" class="fieldInput" id="familyField"></p>
+                        <p class="fieldPar"> Gender :
+                            Male <input type="radio" value="gdrMale" class="fieldInput" id="male">
+                            Female <input type="radio" value="gdrFemale" class="fieldInput" id="female">
+                        </p>
+                        <p class="fieldPar"> National Code : <input type="number" class="fieldInput" id="codeNumField"></p>
+                        <p class="fieldPar"> Birth Date : <input type="date" class="fieldInput" id="birthDateField"></p>        
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Educational Information</legend>
+                    <p class="fieldPar"> Field Of Study : <input type="text" class="fieldInput" id="studyField"></p>
+                <p class="fieldPar"> Year of Entering University <input type="number" class="fieldInput" id="enterYearField"></p>
+                <p class="fieldPar"> Passed Degrees : 
+                    Bachelor<input type="checkbox" value="degBach" class="fieldInput" id="degBachField">
+                    Master<input type="checkbox" value="degMast" class="fieldInput" id="degMastField">
+                    Ph.D<input type="checkbox" value="degPhd" class="fieldInput" id="degPhdField">
+                </p>
+                </fieldset>
+                
+            </form>    
+        </div>
+        </div>        
+    </body>
+</html>

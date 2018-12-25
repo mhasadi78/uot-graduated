@@ -1,0 +1,27 @@
+@font-face {
+    font-family: nazaninFont ;
+    src: url('BNazanin.ttf') ;
+}
+body {
+    background-color: rgb(255, 242, 224)
+}
+#header {
+    height: 60px ;
+    width: 100% ;
+}
+.fieldInput {
+    background-color: rgb(255, 242, 224);
+    border:  solid rgb(106, 106, 106) ;
+}
+#logo {
+    height: 60px ;
+    width: 60px ;
+}
+#headerLogo {
+    padding-left: 2% ;
+}
+#headerText {
+    padding-left: 30% ;
+    vertical-align: 20px ;
+    font-weight: bold ;
+}
