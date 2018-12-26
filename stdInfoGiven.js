@@ -5,3 +5,9 @@ std1 = {
     'lastName' : 'Abdi',
     'nationalID' : 156237001
 }
+
+std2 = {
+    'firstName' : 'Ali',
+    'lastName' : 'Zolfi',
+    'nationalID' : 156237354
+}
