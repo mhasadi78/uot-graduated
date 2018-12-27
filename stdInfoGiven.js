@@ -1,3 +1,9 @@
+console.log(
+    'This is a temprary program \n \n App is runnig ... \n \n .json file created'
+    )
+
+const fs = require('fs')
+// objects~
 var std1, std2, std3, std4, std5
 
 std1 = {
@@ -26,3 +32,7 @@ std5 = {
     'lastName' : 'Ganji',
     'nationalID' : 156237325
 }
+// put objects into an array
+var stdInfo = [std1, std2, std3, std4, std5]
+// making json file
+fs.writeFileSync('stdInfoGiven.json', JSON.stringify(stdInfo))
