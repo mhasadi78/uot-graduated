@@ -1,0 +1,23 @@
+{
+  "name": "uot-gra",
+  "version": "0.0.1",
+  "description": "We decided to make database of university of tabriz graduated students",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mhasadi78/uot-graduated.git"
+  },
+  "keywords": [
+    "uot"
+  ],
+  "author": "mhasadi78",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/mhasadi78/uot-graduated/issues"
+  },
+  "homepage": "https://gitlab.com/mhasadi78/uot-graduated#readme"
+}
