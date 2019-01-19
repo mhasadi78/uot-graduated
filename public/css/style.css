@@ -3,7 +3,8 @@
     src: url('BNazanin.ttf') ;
 }
 body {
-    background-color: rgb(255, 242, 224)
+    background-color: rgb(172, 117, 41);
+    text-align: center
 }
 #header {
     height: 60px ;
