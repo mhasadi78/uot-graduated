@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(112, 206, 206, 0.829) ;
+    text-align: center ;
+}
+#gtStrtDiv {
+    margin-left: 600px;
+    margin-block-end: 100px;
+    height: 40px;
+    width: 250px;
+    background-color: rgba(112, 206, 206, 0.829);
+    font-size: 25pt;
+    border: 1px dashed black ;
+    border-radius: 15px ;
+}
+#gtStrtA {
+    color:black;
+    text-decoration: none;
+}
+#logo {
+    width: 125px ;
+    height: 125px ;
+}
+
