@@ -31,33 +31,32 @@ app.post('/thanks', (req, res) => {
     //console.log(natId)
     stdGiven = fs.readFileSync('stdInfoGiven.json')
     stdGivenArray = JSON.parse(stdGiven)
-    //console.log(stdGivenArray)
-   // console.log(stdGivenArray[3].firstName)
+    // chosing a flag to notice when the ID matches
+    var iflag = false
+    // searching
     for (var i = 0 ; i < stdGivenArray.length ; i++) {
         // checking if national ID is true
         if(stdGivenArray[i].nationalID == natId) {
-            // pushing other info to "data" array
-            //console.log(i)
-            //console.log(stdGivenArray[i].lastName)
-            data.push({
-                'FirstName': req.body.nameField,
-                'FamilyName': req.body.familyField,
-                'NationalID': req.body.natIdField,
-                'BirthDate': req.body.birthDateField,
-                'FieldOfStudy': req.body.studyField,
-                'EnteringYear': req.body.enterYearField
-            })
-            // saving data into "stdInfoDataBase.json" file
-            fs.appendFileSync('stdInfoDataBase.json', JSON.stringify(data))
-            // display a page to confirm the job is done
-            res.render('thanks.hbs')
-        }
-            // display sorry page for fake information
-        else if (i == stdGivenArray.length - 1) {
-            res.render('sorry.hbs')
+            iflag = true
         }
     }
-    
+    if(iflag){
+        data.push({
+            'FirstName': req.body.nameField,
+            'FamilyName': req.body.familyField,
+            'NationalID': req.body.natIdField,
+            'BirthDate': req.body.birthDateField,
+            'FieldOfStudy': req.body.studyField,
+            'EnteringYear': req.body.enterYearField
+        })
+        // saving data into the "stdInfoDataBase.json" file
+        fs.appendFileSync('stdInfoDataBase.json', JSON.stringify(data))
+        // display a page to confirm the job is done
+        res.render('thanks.hbs')
+    }
+    else{
+        res.render('sorry.hbs')
+    }
 })
 
 
