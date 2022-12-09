@@ -22,7 +22,7 @@
   "homepage": "https://gitlab.com/mhasadi78/uot-graduated#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "hbs": "^4.0.1"
   }
